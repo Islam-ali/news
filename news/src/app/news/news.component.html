@@ -1,0 +1,15 @@
+<section class="padding-top" id="SPORTS" >
+    <div class="inputSearch">
+        <div class="div-input">
+            <input [(ngModel)]="search" type="text" placeholder="بحث"  >
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+        <div class="cards" >
+            <div class="card" *ngFor="let x of newsdata | filtter:search ">
+                <div class="rgba" ></div>
+                <img [src]="x.urlToImage" alt="">
+                <a href={{x.url}} target="_blank">{{x.title}}</a>
+            </div>
+        </div>
+</section>

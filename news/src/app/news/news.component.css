@@ -1,0 +1,131 @@
+/**********inputSearch************************/
+.inputSearch
+{
+    width:100%;
+    height: 60vh;
+    margin-bottom: 50px;
+    background-image: url('../../assets/Untitled-collage.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-input
+{
+    height: 50px;
+    width: 50%;
+    position: relative;
+}
+input
+{
+    height: 50px;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    background-color: #003366;
+    color: #f9f9fa;
+    opacity: .8;
+}
+input:focus
+{
+    outline: none;
+}
+input::placeholder
+{
+    color: #999999;
+    text-align: right;
+    padding: 40px;
+}
+.fa-search
+{
+    position: absolute;
+    right:20px;
+    top: 13px;
+    font-size: 25px;
+    color: #f9f9fa;
+}
+/************************************/
+
+
+.cards
+{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(300px , 300px);
+    padding: 20px;
+}
+h1
+{
+    cursor: pointer;
+}
+.padding-top
+{
+    padding-top: 69px;
+}
+.card
+{
+    text-align: center;
+    position: relative;
+    border: none;
+}
+img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px !important;
+}
+.rgba
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px !important;
+    z-index: 2;
+}
+a
+{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #ffffff;
+    z-index: 3;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+
+/*********Media queries****************/
+@media (max-width: 768px) and (min-width:576px)
+{
+    .cards
+    {
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-gap: 5px;
+        grid-auto-rows: minmax(300px , 300px);
+        padding: 20px;
+    }
+}
+@media (max-width:576px)
+{
+    .cards
+    {
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        grid-gap: 5px;
+        grid-auto-rows: minmax(300px , 300px);
+        padding: 20px;
+    }
+}
